@@ -24,6 +24,6 @@ public class PierwiastekPlusWyjatki {
                 System.out.println("Proszę podać liczbę, inne znaki nie są akceptowane.");
                 scanner1.nextLine();
             }
-        }
+        }scanner1.close();
     }
 }
