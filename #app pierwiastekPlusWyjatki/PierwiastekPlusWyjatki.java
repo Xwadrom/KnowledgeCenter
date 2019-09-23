@@ -3,16 +3,12 @@ import java.util.Scanner;
 
 public class PierwiastekPlusWyjatki {
     public static void main(String[] args) {
-
-        double a = 0;
         boolean result = true;
-
         Scanner scanner1 = new Scanner(System.in);
-
         while (result) {
             try {
                 System.out.println("Podaj liczbę: ");
-                a = scanner1.nextDouble();
+                double a = scanner1.nextDouble();
                 if (a < 0) {
                     throw new IllegalArgumentException();
                 } else
