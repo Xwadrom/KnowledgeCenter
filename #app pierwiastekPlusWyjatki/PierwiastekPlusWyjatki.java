@@ -5,6 +5,10 @@ public class PierwiastekPlusWyjatki {
     public static void main(String[] args) {
         boolean result = true;
         Scanner scanner1 = new Scanner(System.in);
+        operation(result, scanner1);
+    }
+
+    private static void operation(boolean result, Scanner scanner1) {
         while (result) {
             try {
                 System.out.println("Podaj liczbę: ");
