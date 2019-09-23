@@ -11,18 +11,18 @@ public class PierwiastekPlusWyjatki {
     private static void operation(boolean result, Scanner scanner1) {
         while (result) {
             try {
-                System.out.println("Podaj liczbę: ");
-                double a = scanner1.nextDouble();
+                    System.out.println("Podaj liczbę: ");
+                    double a = scanner1.nextDouble();
                 if (a < 0) {
                     throw new IllegalArgumentException();
                 } else
                     result = false;
-                System.out.println("Pierwiastek z Twojej liczby to: " + Math.sqrt(a));
+                    System.out.println("Pierwiastek z Twojej liczby to: " + Math.sqrt(a));
             } catch (IllegalArgumentException ex) {
-                System.out.println("Liczba musi być dodatnia, spróbuj jeszcze raz.");
+                    System.out.println("Liczba musi być dodatnia, spróbuj jeszcze raz.");
             }catch(InputMismatchException e){
-                System.out.println("Proszę podać liczbę, inne znaki nie są akceptowane.");
-                scanner1.nextLine();
+                    System.out.println("Proszę podać liczbę, inne znaki nie są akceptowane.");
+                    scanner1.nextLine();
             }
         }scanner1.close();
     }
