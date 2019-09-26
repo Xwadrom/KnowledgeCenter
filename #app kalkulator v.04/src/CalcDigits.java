@@ -31,10 +31,10 @@ public class CalcDigits {//implements Patterns
             }
             if (option == 1) {
                 System.out.println("Podaj pierwszą liczbę:");
-                a = Methods.giveNumber(a, error, scanner1);
+                a = MathCalculations.giveNumber(a, error, scanner1);
                 System.out.println("Podaj drugą liczbę:");
-                b = Methods.giveNumber(b, error, scanner1);
-                Methods.mathOperands(a, b, error2, scanner1);
+                b = MathCalculations.giveNumber(b, error, scanner1);
+                MathCalculations.mathOperands(a, b, error2, scanner1);
             } else if (option == 2) {
                 scanner1.nextLine();
                 String figure;

@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Methods {
+public class MathCalculations {
     public static double giveNumber(double digit, boolean error, Scanner scanner1) {
         do {
             try {
