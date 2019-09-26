@@ -1,5 +1,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
 import Shapes.*;
 
 public class CalcDigits {//implements Patterns
@@ -38,8 +39,8 @@ public class CalcDigits {//implements Patterns
                 scanner1.nextLine();
                 String figure;
                 Circle c1 = new Circle();
-                Rectangle r1=new Rectangle();
-                Triangle t1=new Triangle();
+                Rectangle r1 = new Rectangle();
+                Triangle t1 = new Triangle();
                 do {
                     System.out.println("Wybierz opcje:");
                     System.out.println("t - Trójkąt. Oblicza pole i obwód trójkąta");
@@ -56,28 +57,28 @@ public class CalcDigits {//implements Patterns
                                 System.out.println("Pole Twojego koła wynosi: " + c1.calculateArea());
                                 System.out.println("Obwód Twojego koła wynosi: " + c1.calculatePerimeter() + "\n");
                                 error = false;
-                            }catch (InputMismatchException ex){
+                            } catch (InputMismatchException ex) {
                                 scanner1.nextLine();
                                 System.err.println("Wprowadzone dane nie są liczbą.");
                             }
                             continue;
-                        case"p":
-                        case"P":
-                             try {
-                                 System.out.println("Podaj długość pierwszego boku prostokąta jako liczbę:");
-                                 r1.setA(scanner1.nextDouble());
-                                 scanner1.nextLine();
-                                 System.out.println("Podaj długość drugiego boku prostokąta jako liczbę:");
-                                 r1.setB(scanner1.nextDouble());
-                                 scanner1.nextLine();
-                                 System.out.println("Pole Twojego prostokąta wynosi: " + r1.calculateArea());
-                                 System.out.println("Obwód Twojego prostokąta wynosi: " + r1.calculatePerimeter() + "\n");
-                                 error = false;
-                             }catch (InputMismatchException ex){
-                                 scanner1.nextLine();
-                                 System.err.println("Wprowadzone dane nie są liczbą.");
-                             }
-                             continue;
+                        case "p":
+                        case "P":
+                            try {
+                                System.out.println("Podaj długość pierwszego boku prostokąta jako liczbę:");
+                                r1.setA(scanner1.nextDouble());
+                                scanner1.nextLine();
+                                System.out.println("Podaj długość drugiego boku prostokąta jako liczbę:");
+                                r1.setB(scanner1.nextDouble());
+                                scanner1.nextLine();
+                                System.out.println("Pole Twojego prostokąta wynosi: " + r1.calculateArea());
+                                System.out.println("Obwód Twojego prostokąta wynosi: " + r1.calculatePerimeter() + "\n");
+                                error = false;
+                            } catch (InputMismatchException ex) {
+                                scanner1.nextLine();
+                                System.err.println("Wprowadzone dane nie są liczbą.");
+                            }
+                            continue;
                         case "t":
                         case "T":
                             try {
@@ -93,7 +94,7 @@ public class CalcDigits {//implements Patterns
                                 System.out.println("Pole Twojego trójkata wynosi: " + t1.calculateArea());
                                 System.out.println("Obwód Twojego trójkąta wynosi: " + t1.calculatePerimeter() + "\n");
                                 error = false;
-                            }catch (InputMismatchException ex){
+                            } catch (InputMismatchException ex) {
                                 scanner1.nextLine();
                                 System.err.println("Wprowadzone dane nie są liczbą.");
                             }

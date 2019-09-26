@@ -1,6 +1,6 @@
 package Shapes;
 
-public class Rectangle implements Patterns{
+public class Rectangle implements Patterns {
 
     private double a;
     private double b;
@@ -24,11 +24,11 @@ public class Rectangle implements Patterns{
 
     @Override
     public double calculateArea() {
-        return a*b;
+        return a * b;
     }
 
     @Override
     public double calculatePerimeter() {
-        return 2*a+2*b;
+        return 2 * a + 2 * b;
     }
 }

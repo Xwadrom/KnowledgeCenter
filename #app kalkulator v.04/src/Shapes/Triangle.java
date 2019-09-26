@@ -1,6 +1,6 @@
 package Shapes;
 
-public class Triangle implements Patterns{
+public class Triangle implements Patterns {
     private double a;
     private double b;
     private double c;
@@ -30,15 +30,14 @@ public class Triangle implements Patterns{
     }
 
 
-
     @Override
     public double calculateArea() {//pole
-        double p=(a+b+c)/2;
-        return Math.sqrt(p*(p-a)*(p-b)*(p-c));
+        double p = (a + b + c) / 2;
+        return Math.sqrt(p * (p - a) * (p - b) * (p - c));
     }
 
     @Override
     public double calculatePerimeter() {//obwod
-        return a+b+c;
+        return a + b + c;
     }//obwo
 }

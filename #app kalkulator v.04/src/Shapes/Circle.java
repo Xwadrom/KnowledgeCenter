@@ -12,15 +12,13 @@ public class Circle implements Patterns {
         this.r = r;
     }
 
-
-
     @Override
     public double calculateArea() {//pole
-        return Patterns.PI*r*r;
+        return Patterns.PI * r * r;
     }//pole
 
     @Override
     public double calculatePerimeter() {//obwod
-        return 2*Patterns.PI*r;
+        return 2 * Patterns.PI * r;
     }
 }
