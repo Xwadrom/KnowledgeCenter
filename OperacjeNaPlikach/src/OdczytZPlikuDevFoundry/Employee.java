@@ -1,4 +1,4 @@
-package ZapisDoPlikuListDevFoundry;
+package OdczytZPlikuDevFoundry;
 
 public class Employee {
     private String firstName;
